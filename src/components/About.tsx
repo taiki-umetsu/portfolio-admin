@@ -9,6 +9,7 @@ import {
   SimpleForm,
   TextInput,
 } from "react-admin";
+import CustomToolbar from "./CustomToolbar";
 
 export const AboutList = (props: any) => (
   <List {...props}>
@@ -28,7 +29,7 @@ export const AboutShow = (props: any) => (
 
 export const AboutEdit = (props: any) => (
   <Edit {...props}>
-    <SimpleForm>
+    <SimpleForm toolbar={<CustomToolbar />}>
       <TextInput source="description" multiline fullWidth />
     </SimpleForm>
   </Edit>
