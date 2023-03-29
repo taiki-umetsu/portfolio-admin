@@ -18,6 +18,14 @@ const CustomLoginForm = () => {
     setUser((prevUser) => ({ ...prevUser, [name]: value }));
   };
 
+  const handleDemoLogin = () => {
+    const demoUser = {
+      email: "demo-user@example.com",
+      password: "demouserpassword",
+    };
+    login(demoUser).catch(() => notify("Invalid email or password"));
+  };
+
   return (
     <Container maxWidth="xs">
       <Box
@@ -71,6 +79,15 @@ const CustomLoginForm = () => {
               sx={{ mt: 2 }}
             >
               Submit
+            </Button>
+            <Button
+              variant="outlined"
+              color="secondary"
+              fullWidth
+              sx={{ mt: 2 }}
+              onClick={handleDemoLogin}
+            >
+              Demo User Sign In
             </Button>
           </Box>
         </form>
