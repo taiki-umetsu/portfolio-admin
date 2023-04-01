@@ -27,7 +27,7 @@ export const SkillList = (props: any) => (
   <List {...props}>
     <Datagrid rowClick="edit">
       <TextField source="title" />
-      <TextField source="level_description" />
+      <TextField source="level_description" sortable={false} />
       <DateField source="created_at" />
       <DateField source="updated_at" />
     </Datagrid>
