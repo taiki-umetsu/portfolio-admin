@@ -1,16 +1,38 @@
+# Overview
+
+- Admin panel URL: https://portfolio-admin.taikiumetsu.dev/
+- This project is an admin panel application for [Taiki Umetsu portfolio](https://portfolio.taikiumetsu.dev/), built using the following technologies:
+
+  - Typescript
+  - Next.js
+  - react-admin
+
 # Sign in
 
-<img src="public/readme/sign_in.png" width="500px">
+<img src="public/readme/sign-in.png" width="500px">
 
-- providing a sign-in function for demo users as well.
+- A sign-in function is available for demo users.
+- The demo user has read-only access.
+- Access control is managed by the backend server.
 
-# About page
+# Abouts page
 
-<img src="public/readme/About.png" width="500px">
+<img src="public/readme/about-edit.png" width="500px">
+
+# Skills page
+
+<img src="public/readme/skills-index.png" width="500px">
+<img src="public/readme/skills-edit.png" width="500px">
+<img src="public/readme/skills-show.png" width="500px">
 
 # API server
 
 - GitHub: https://github.com/taiki-umetsu/portfolio_api
-- baseURL: https://portfolio-api.taikiumetsu.dev/
-- API Document: https://portfolio-api.taikiumetsu.dev/api-docs/index.html<br><br>
-  <img src="public/readme/Swagger.png" width="500px">
+- API Base URL: https://portfolio-api.taikiumetsu.dev/
+- API Document: https://portfolio-api.taikiumetsu.dev/api-docs/index.html<br>
+  <img src="public/readme/api-docs.png" width="500px">
+
+# Portfolio page
+
+- Portfolio URL: https://portfolio.taikiumetsu.dev/
+- GitHub: https://github.com/taiki-umetsu/portfolio-ui
