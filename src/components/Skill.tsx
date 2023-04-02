@@ -3,11 +3,13 @@ import {
   List,
   Datagrid,
   TextField,
+  NumberField,
   Show,
   SimpleShowLayout,
   Edit,
   SimpleForm,
   TextInput,
+  NumberInput,
   Create,
   DateField,
   SelectInput,
@@ -28,6 +30,7 @@ export const SkillList = (props: any) => (
     <Datagrid rowClick="edit">
       <TextField source="title" />
       <TextField source="level_description" sortable={false} />
+      <NumberField source="order" />
       <DateField source="created_at" />
       <DateField source="updated_at" />
     </Datagrid>
@@ -39,6 +42,7 @@ export const SkillShow = (props: any) => (
     <SimpleShowLayout>
       <TextField source="title" />
       <TextField source="level_description" />
+      <NumberField source="order" />
       <DateField source="created_at" showTime />
       <DateField source="updated_at" showTime />
     </SimpleShowLayout>
@@ -50,6 +54,7 @@ export const SkillEdit = (props: any) => (
     <SimpleForm>
       <TextInput source="title" />
       <SelectInput source="level" choices={levelChoices} />
+      <NumberInput source="order" />
     </SimpleForm>
   </Edit>
 );
@@ -59,6 +64,7 @@ export const SkillCreate = (props: any) => (
     <SimpleForm>
       <TextInput source="title" />
       <SelectInput source="level" choices={levelChoices} />
+      <NumberInput source="order" />
     </SimpleForm>
   </Create>
 );
